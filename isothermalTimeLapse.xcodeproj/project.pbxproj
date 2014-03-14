@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		109D6961189059AA008374CD /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109D6960189059AA008374CD /* opencv2.framework */; };
+		109D696518905A8C008374CD /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 109D696318905A8C008374CD /* BLE.m */; };
+		109D696818907331008374CD /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 109D696718907331008374CD /* UIImage+OpenCV.mm */; };
+		109D696A1890746A008374CD /* bluetooth_connected.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D69691890746A008374CD /* bluetooth_connected.mp3 */; };
+		822EFCCD16CABCCB001850D9 /* retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 822EFCCC16CABCCB001850D9 /* retina.png */; };
+		822EFCCF16CABD06001850D9 /* retina_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 822EFCCE16CABD06001850D9 /* retina_retina.png */; };
+		8260B4D1176F6B4C0065A43B /* ImageProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8260B4D0176F6B4C0065A43B /* ImageProcessor.mm */; };
+		8261B0B316CB424100E329F7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8261B0B216CB424100E329F7 /* MediaPlayer.framework */; };
+		8261B0E116CC17A400E329F7 /* exposure_locked.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8261B0DF16CC17A400E329F7 /* exposure_locked.mp3 */; };
+		8261B0E216CC17A400E329F7 /* focus_locked.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8261B0E016CC17A400E329F7 /* focus_locked.mp3 */; };
+		8284DA5C1767B89900FB6874 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284DA5B1767B89900FB6874 /* CoreBluetooth.framework */; };
+		8299AD5717D50A380001CD0E /* init_mot_cont.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8299AD5617D50A370001CD0E /* init_mot_cont.mp3 */; };
+		82E85D50167ABB340094F69E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85D4F167ABB340094F69E /* UIKit.framework */; };
+		82E85D52167ABB340094F69E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85D51167ABB340094F69E /* Foundation.framework */; };
+		82E85D54167ABB340094F69E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85D53167ABB340094F69E /* CoreGraphics.framework */; };
+		82E85D5A167ABB340094F69E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82E85D58167ABB340094F69E /* InfoPlist.strings */; };
+		82E85D5C167ABB340094F69E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E85D5B167ABB340094F69E /* main.m */; };
+		82E85D60167ABB340094F69E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E85D5F167ABB340094F69E /* AppDelegate.m */; };
+		82E85D62167ABB340094F69E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 82E85D61167ABB340094F69E /* Default.png */; };
+		82E85D64167ABB340094F69E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82E85D63167ABB340094F69E /* Default@2x.png */; };
+		82E85D66167ABB340094F69E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82E85D65167ABB340094F69E /* Default-568h@2x.png */; };
+		82E85D69167ABB340094F69E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E85D67167ABB340094F69E /* MainStoryboard_iPhone.storyboard */; };
+		82E85D6C167ABB350094F69E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E85D6A167ABB340094F69E /* MainStoryboard_iPad.storyboard */; };
+		82E85D6F167ABB350094F69E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E85D6E167ABB350094F69E /* ViewController.m */; };
+		82E85D77167ABB350094F69E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85D76167ABB350094F69E /* SenTestingKit.framework */; };
+		82E85D78167ABB350094F69E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85D4F167ABB340094F69E /* UIKit.framework */; };
+		82E85D79167ABB350094F69E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85D51167ABB340094F69E /* Foundation.framework */; };
+		82E85D81167ABB350094F69E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82E85D7F167ABB350094F69E /* InfoPlist.strings */; };
+		82E85D84167ABB350094F69E /* EyeScope2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E85D83167ABB350094F69E /* EyeScope2Tests.m */; };
+		82E85D8F167ABB850094F69E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E85D8E167ABB850094F69E /* CameraViewController.m */; };
+		82E85D95167ABCF30094F69E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85D94167ABCF30094F69E /* AVFoundation.framework */; };
+		82E85D97167ABCFA0094F69E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85D96167ABCFA0094F69E /* AssetsLibrary.framework */; };
+		82E85DA0167B028D0094F69E /* SoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E85D9F167B028D0094F69E /* SoundPlayer.m */; };
+		82E85DA2167B05ED0094F69E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E85DA1167B05EC0094F69E /* AudioToolbox.framework */; };
+		82E85DA9167B97AB0094F69E /* ToneGeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E85DA8167B97AB0094F69E /* ToneGeneratorViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		82E85DAC1682508C0094F69E /* somethingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82E85DAB1682508C0094F69E /* somethingwrong.wav */; };
+		82E85DB216827B160094F69E /* Sine_wave_440.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 82E85DB116827B160094F69E /* Sine_wave_440.ogg */; };
+		82E85DB416827C250094F69E /* 440Hz-5sec.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82E85DB316827C250094F69E /* 440Hz-5sec.mp3 */; };
+		82F5154A16C995500061DACB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F5154916C995500061DACB /* CoreMedia.framework */; };
+		82F5155116C99DD40061DACB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F5155016C99DD30061DACB /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82E85D7A167ABB350094F69E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82E85D42167ABB340094F69E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82E85D4A167ABB340094F69E;
+			remoteInfo = EyeScope2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		109D6960189059AA008374CD /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		109D696218905A8C008374CD /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		109D696318905A8C008374CD /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		109D696418905A8C008374CD /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		109D696618907331008374CD /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		109D696718907331008374CD /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		109D69691890746A008374CD /* bluetooth_connected.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bluetooth_connected.mp3; sourceTree = "<group>"; };
+		822EFCCC16CABCCB001850D9 /* retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina.png; sourceTree = "<group>"; };
+		822EFCCE16CABD06001850D9 /* retina_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina_retina.png; sourceTree = "<group>"; };
+		8260B4CF176F6B4C0065A43B /* ImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessor.h; sourceTree = "<group>"; };
+		8260B4D0176F6B4C0065A43B /* ImageProcessor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageProcessor.mm; sourceTree = "<group>"; };
+		8261B0B216CB424100E329F7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		8261B0DA16CC07D000E329F7 /* EyeScope2 copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EyeScope2 copy-Info.plist"; path = "/Users/mdambrosio/Documents/EyeScope2/EyeScope2 copy-Info.plist"; sourceTree = "<absolute>"; };
+		8261B0DF16CC17A400E329F7 /* exposure_locked.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = exposure_locked.mp3; sourceTree = "<group>"; };
+		8261B0E016CC17A400E329F7 /* focus_locked.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = focus_locked.mp3; sourceTree = "<group>"; };
+		8284DA581767B85200FB6874 /* BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		8284DA591767B85200FB6874 /* BLE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		8284DA5A1767B85200FB6874 /* BLEDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		8284DA5B1767B89900FB6874 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8299AD5617D50A370001CD0E /* init_mot_cont.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = init_mot_cont.mp3; sourceTree = "<group>"; };
+		82E85D4B167ABB340094F69E /* Isothermal TimeLapse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Isothermal TimeLapse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82E85D4F167ABB340094F69E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		82E85D51167ABB340094F69E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		82E85D53167ABB340094F69E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		82E85D57167ABB340094F69E /* isothermalTimeLapse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "isothermalTimeLapse-Info.plist"; sourceTree = "<group>"; };
+		82E85D59167ABB340094F69E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82E85D5B167ABB340094F69E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82E85D5D167ABB340094F69E /* isothermalTimeLapse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "isothermalTimeLapse-Prefix.pch"; sourceTree = "<group>"; };
+		82E85D5E167ABB340094F69E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		82E85D5F167ABB340094F69E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		82E85D61167ABB340094F69E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		82E85D63167ABB340094F69E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		82E85D65167ABB340094F69E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		82E85D68167ABB340094F69E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		82E85D6B167ABB350094F69E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		82E85D6D167ABB350094F69E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		82E85D6E167ABB350094F69E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		82E85D75167ABB350094F69E /* isothermalTimeLapseTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = isothermalTimeLapseTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82E85D76167ABB350094F69E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		82E85D7E167ABB350094F69E /* isothermalTimeLapseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "isothermalTimeLapseTests-Info.plist"; sourceTree = "<group>"; };
+		82E85D80167ABB350094F69E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82E85D82167ABB350094F69E /* EyeScope2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EyeScope2Tests.h; sourceTree = "<group>"; };
+		82E85D83167ABB350094F69E /* EyeScope2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EyeScope2Tests.m; sourceTree = "<group>"; };
+		82E85D8D167ABB850094F69E /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		82E85D8E167ABB850094F69E /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		82E85D94167ABCF30094F69E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		82E85D96167ABCFA0094F69E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		82E85D9E167B028D0094F69E /* SoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundPlayer.h; sourceTree = "<group>"; };
+		82E85D9F167B028D0094F69E /* SoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundPlayer.m; sourceTree = "<group>"; };
+		82E85DA1167B05EC0094F69E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		82E85DA7167B97AB0094F69E /* ToneGeneratorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGeneratorViewController.h; sourceTree = "<group>"; };
+		82E85DA8167B97AB0094F69E /* ToneGeneratorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGeneratorViewController.m; sourceTree = "<group>"; };
+		82E85DAB1682508C0094F69E /* somethingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = somethingwrong.wav; sourceTree = "<group>"; };
+		82E85DB116827B160094F69E /* Sine_wave_440.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sine_wave_440.ogg; sourceTree = "<group>"; };
+		82E85DB316827C250094F69E /* 440Hz-5sec.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "440Hz-5sec.mp3"; sourceTree = "<group>"; };
+		82F5154916C995500061DACB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		82F5155016C99DD30061DACB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82E85D48167ABB340094F69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109D6961189059AA008374CD /* opencv2.framework in Frameworks */,
+				8284DA5C1767B89900FB6874 /* CoreBluetooth.framework in Frameworks */,
+				8261B0B316CB424100E329F7 /* MediaPlayer.framework in Frameworks */,
+				82F5155116C99DD40061DACB /* QuartzCore.framework in Frameworks */,
+				82F5154A16C995500061DACB /* CoreMedia.framework in Frameworks */,
+				82E85DA2167B05ED0094F69E /* AudioToolbox.framework in Frameworks */,
+				82E85D97167ABCFA0094F69E /* AssetsLibrary.framework in Frameworks */,
+				82E85D95167ABCF30094F69E /* AVFoundation.framework in Frameworks */,
+				82E85D50167ABB340094F69E /* UIKit.framework in Frameworks */,
+				82E85D52167ABB340094F69E /* Foundation.framework in Frameworks */,
+				82E85D54167ABB340094F69E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E85D71167ABB350094F69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E85D77167ABB350094F69E /* SenTestingKit.framework in Frameworks */,
+				82E85D78167ABB350094F69E /* UIKit.framework in Frameworks */,
+				82E85D79167ABB350094F69E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8284DA571767B85200FB6874 /* BLE_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				8284DA581767B85200FB6874 /* BLE.h */,
+				8284DA591767B85200FB6874 /* BLE.m */,
+				8284DA5A1767B85200FB6874 /* BLEDefines.h */,
+			);
+			name = BLE_Framework;
+			path = ../../Downloads/BLEShield_SDK_b0.4.2/BLE_Framework;
+			sourceTree = "<group>";
+		};
+		82E85D40167ABB340094F69E = {
+			isa = PBXGroup;
+			children = (
+				109D696618907331008374CD /* UIImage+OpenCV.h */,
+				109D696718907331008374CD /* UIImage+OpenCV.mm */,
+				109D696218905A8C008374CD /* BLE.h */,
+				109D696318905A8C008374CD /* BLE.m */,
+				109D696418905A8C008374CD /* BLEDefines.h */,
+				8284DA5B1767B89900FB6874 /* CoreBluetooth.framework */,
+				8284DA571767B85200FB6874 /* BLE_Framework */,
+				8261B0B216CB424100E329F7 /* MediaPlayer.framework */,
+				822EFCCE16CABD06001850D9 /* retina_retina.png */,
+				822EFCCC16CABCCB001850D9 /* retina.png */,
+				82F5155016C99DD30061DACB /* QuartzCore.framework */,
+				82F5154916C995500061DACB /* CoreMedia.framework */,
+				82E85DA1167B05EC0094F69E /* AudioToolbox.framework */,
+				82E85D96167ABCFA0094F69E /* AssetsLibrary.framework */,
+				82E85D94167ABCF30094F69E /* AVFoundation.framework */,
+				82E85D55167ABB340094F69E /* isothermalTimeLapse */,
+				82E85D7C167ABB350094F69E /* isothermalTimeLapseTests */,
+				82E85D4E167ABB340094F69E /* Frameworks */,
+				82E85D4C167ABB340094F69E /* Products */,
+				8261B0DA16CC07D000E329F7 /* EyeScope2 copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		82E85D4C167ABB340094F69E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82E85D4B167ABB340094F69E /* Isothermal TimeLapse.app */,
+				82E85D75167ABB350094F69E /* isothermalTimeLapseTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82E85D4E167ABB340094F69E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				109D6960189059AA008374CD /* opencv2.framework */,
+				82E85D4F167ABB340094F69E /* UIKit.framework */,
+				82E85D51167ABB340094F69E /* Foundation.framework */,
+				82E85D53167ABB340094F69E /* CoreGraphics.framework */,
+				82E85D76167ABB350094F69E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82E85D55167ABB340094F69E /* isothermalTimeLapse */ = {
+			isa = PBXGroup;
+			children = (
+				82E85DAA1682500C0094F69E /* Sounds */,
+				82E85DA7167B97AB0094F69E /* ToneGeneratorViewController.h */,
+				82E85DA8167B97AB0094F69E /* ToneGeneratorViewController.m */,
+				82E85D5E167ABB340094F69E /* AppDelegate.h */,
+				82E85D5F167ABB340094F69E /* AppDelegate.m */,
+				82E85D67167ABB340094F69E /* MainStoryboard_iPhone.storyboard */,
+				82E85D6A167ABB340094F69E /* MainStoryboard_iPad.storyboard */,
+				82E85D8D167ABB850094F69E /* CameraViewController.h */,
+				82E85D8E167ABB850094F69E /* CameraViewController.m */,
+				8260B4CF176F6B4C0065A43B /* ImageProcessor.h */,
+				8260B4D0176F6B4C0065A43B /* ImageProcessor.mm */,
+				82E85D6D167ABB350094F69E /* ViewController.h */,
+				82E85D6E167ABB350094F69E /* ViewController.m */,
+				82E85D9E167B028D0094F69E /* SoundPlayer.h */,
+				82E85D9F167B028D0094F69E /* SoundPlayer.m */,
+				82E85D56167ABB340094F69E /* Supporting Files */,
+			);
+			name = isothermalTimeLapse;
+			path = EyeScope2;
+			sourceTree = "<group>";
+		};
+		82E85D56167ABB340094F69E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82E85D57167ABB340094F69E /* isothermalTimeLapse-Info.plist */,
+				82E85D58167ABB340094F69E /* InfoPlist.strings */,
+				82E85D5B167ABB340094F69E /* main.m */,
+				82E85D5D167ABB340094F69E /* isothermalTimeLapse-Prefix.pch */,
+				82E85D61167ABB340094F69E /* Default.png */,
+				82E85D63167ABB340094F69E /* Default@2x.png */,
+				82E85D65167ABB340094F69E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82E85D7C167ABB350094F69E /* isothermalTimeLapseTests */ = {
+			isa = PBXGroup;
+			children = (
+				82E85D82167ABB350094F69E /* EyeScope2Tests.h */,
+				82E85D83167ABB350094F69E /* EyeScope2Tests.m */,
+				82E85D7D167ABB350094F69E /* Supporting Files */,
+			);
+			name = isothermalTimeLapseTests;
+			path = EyeScope2Tests;
+			sourceTree = "<group>";
+		};
+		82E85D7D167ABB350094F69E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82E85D7E167ABB350094F69E /* isothermalTimeLapseTests-Info.plist */,
+				82E85D7F167ABB350094F69E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82E85DAA1682500C0094F69E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8261B0DF16CC17A400E329F7 /* exposure_locked.mp3 */,
+				109D69691890746A008374CD /* bluetooth_connected.mp3 */,
+				8261B0E016CC17A400E329F7 /* focus_locked.mp3 */,
+				8299AD5617D50A370001CD0E /* init_mot_cont.mp3 */,
+				82E85DB316827C250094F69E /* 440Hz-5sec.mp3 */,
+				82E85DB116827B160094F69E /* Sine_wave_440.ogg */,
+				82E85DAB1682508C0094F69E /* somethingwrong.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82E85D4A167ABB340094F69E /* Isothermal TimeLapse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82E85D87167ABB350094F69E /* Build configuration list for PBXNativeTarget "Isothermal TimeLapse" */;
+			buildPhases = (
+				82E85D47167ABB340094F69E /* Sources */,
+				82E85D48167ABB340094F69E /* Frameworks */,
+				82E85D49167ABB340094F69E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Isothermal TimeLapse";
+			productName = EyeScope2;
+			productReference = 82E85D4B167ABB340094F69E /* Isothermal TimeLapse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82E85D74167ABB350094F69E /* isothermalTimeLapseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82E85D8A167ABB350094F69E /* Build configuration list for PBXNativeTarget "isothermalTimeLapseTests" */;
+			buildPhases = (
+				82E85D70167ABB350094F69E /* Sources */,
+				82E85D71167ABB350094F69E /* Frameworks */,
+				82E85D72167ABB350094F69E /* Resources */,
+				82E85D73167ABB350094F69E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82E85D7B167ABB350094F69E /* PBXTargetDependency */,
+			);
+			name = isothermalTimeLapseTests;
+			productName = EyeScope2Tests;
+			productReference = 82E85D75167ABB350094F69E /* isothermalTimeLapseTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82E85D42167ABB340094F69E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Arunan Skandarajah";
+			};
+			buildConfigurationList = 82E85D45167ABB340094F69E /* Build configuration list for PBXProject "isothermalTimeLapse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82E85D40167ABB340094F69E;
+			productRefGroup = 82E85D4C167ABB340094F69E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82E85D4A167ABB340094F69E /* Isothermal TimeLapse */,
+				82E85D74167ABB350094F69E /* isothermalTimeLapseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82E85D49167ABB340094F69E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E85D5A167ABB340094F69E /* InfoPlist.strings in Resources */,
+				82E85D62167ABB340094F69E /* Default.png in Resources */,
+				82E85D64167ABB340094F69E /* Default@2x.png in Resources */,
+				82E85D66167ABB340094F69E /* Default-568h@2x.png in Resources */,
+				82E85D69167ABB340094F69E /* MainStoryboard_iPhone.storyboard in Resources */,
+				82E85D6C167ABB350094F69E /* MainStoryboard_iPad.storyboard in Resources */,
+				82E85DAC1682508C0094F69E /* somethingwrong.wav in Resources */,
+				82E85DB216827B160094F69E /* Sine_wave_440.ogg in Resources */,
+				109D696A1890746A008374CD /* bluetooth_connected.mp3 in Resources */,
+				82E85DB416827C250094F69E /* 440Hz-5sec.mp3 in Resources */,
+				822EFCCD16CABCCB001850D9 /* retina.png in Resources */,
+				822EFCCF16CABD06001850D9 /* retina_retina.png in Resources */,
+				8261B0E116CC17A400E329F7 /* exposure_locked.mp3 in Resources */,
+				8261B0E216CC17A400E329F7 /* focus_locked.mp3 in Resources */,
+				8299AD5717D50A380001CD0E /* init_mot_cont.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E85D72167ABB350094F69E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E85D81167ABB350094F69E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82E85D73167ABB350094F69E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82E85D47167ABB340094F69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				109D696518905A8C008374CD /* BLE.m in Sources */,
+				109D696818907331008374CD /* UIImage+OpenCV.mm in Sources */,
+				82E85D5C167ABB340094F69E /* main.m in Sources */,
+				82E85D60167ABB340094F69E /* AppDelegate.m in Sources */,
+				82E85D6F167ABB350094F69E /* ViewController.m in Sources */,
+				82E85D8F167ABB850094F69E /* CameraViewController.m in Sources */,
+				82E85DA0167B028D0094F69E /* SoundPlayer.m in Sources */,
+				82E85DA9167B97AB0094F69E /* ToneGeneratorViewController.m in Sources */,
+				8260B4D1176F6B4C0065A43B /* ImageProcessor.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E85D70167ABB350094F69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82E85D84167ABB350094F69E /* EyeScope2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82E85D7B167ABB350094F69E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82E85D4A167ABB340094F69E /* Isothermal TimeLapse */;
+			targetProxy = 82E85D7A167ABB350094F69E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82E85D58167ABB340094F69E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82E85D59167ABB340094F69E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		82E85D67167ABB340094F69E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82E85D68167ABB340094F69E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		82E85D6A167ABB340094F69E /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82E85D6B167ABB350094F69E /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		82E85D7F167ABB350094F69E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82E85D80167ABB350094F69E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82E85D85167ABB350094F69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82E85D86167ABB350094F69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82E85D88167ABB350094F69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../Cellscope-loa/cell-scope-loa\\\"",
+					"/Users/fletchlab/Documents/Disease\\ Applications/EyeScope2Bluetooth3Arunan",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EyeScope2/isothermalTimeLapse-Prefix.pch";
+				INFOPLIST_FILE = "EyeScope2/isothermalTimeLapse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82E85D89167ABB350094F69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\"$(SRCROOT)/../../Cellscope-loa/cell-scope-loa\\\"",
+					"/Users/fletchlab/Documents/Disease\\ Applications/EyeScope2Bluetooth3Arunan",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EyeScope2/isothermalTimeLapse-Prefix.pch";
+				INFOPLIST_FILE = "EyeScope2/isothermalTimeLapse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		82E85D8B167ABB350094F69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EyeScope2.app/EyeScope2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EyeScope2/EyeScope2-Prefix.pch";
+				INFOPLIST_FILE = "EyeScope2Tests/isothermalTimeLapseTests-Info.plist";
+				PRODUCT_NAME = isothermalTimeLapseTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		82E85D8C167ABB350094F69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EyeScope2.app/EyeScope2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EyeScope2/EyeScope2-Prefix.pch";
+				INFOPLIST_FILE = "EyeScope2Tests/isothermalTimeLapseTests-Info.plist";
+				PRODUCT_NAME = isothermalTimeLapseTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82E85D45167ABB340094F69E /* Build configuration list for PBXProject "isothermalTimeLapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82E85D85167ABB350094F69E /* Debug */,
+				82E85D86167ABB350094F69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82E85D87167ABB350094F69E /* Build configuration list for PBXNativeTarget "Isothermal TimeLapse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82E85D88167ABB350094F69E /* Debug */,
+				82E85D89167ABB350094F69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82E85D8A167ABB350094F69E /* Build configuration list for PBXNativeTarget "isothermalTimeLapseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82E85D8B167ABB350094F69E /* Debug */,
+				82E85D8C167ABB350094F69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82E85D42167ABB340094F69E /* Project object */;
+}
