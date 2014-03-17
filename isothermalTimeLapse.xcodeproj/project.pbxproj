@@ -11,6 +11,7 @@
 		109D696518905A8C008374CD /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 109D696318905A8C008374CD /* BLE.m */; };
 		109D696818907331008374CD /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 109D696718907331008374CD /* UIImage+OpenCV.mm */; };
 		109D696A1890746A008374CD /* bluetooth_connected.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 109D69691890746A008374CD /* bluetooth_connected.mp3 */; };
+		10A0439018D42429006BDA7E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10A0438F18D42429006BDA7E /* ImageIO.framework */; };
 		822EFCCD16CABCCB001850D9 /* retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 822EFCCC16CABCCB001850D9 /* retina.png */; };
 		822EFCCF16CABD06001850D9 /* retina_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 822EFCCE16CABD06001850D9 /* retina_retina.png */; };
 		8260B4D1176F6B4C0065A43B /* ImageProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8260B4D0176F6B4C0065A43B /* ImageProcessor.mm */; };
@@ -67,6 +68,7 @@
 		109D696618907331008374CD /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
 		109D696718907331008374CD /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
 		109D69691890746A008374CD /* bluetooth_connected.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bluetooth_connected.mp3; sourceTree = "<group>"; };
+		10A0438F18D42429006BDA7E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		822EFCCC16CABCCB001850D9 /* retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina.png; sourceTree = "<group>"; };
 		822EFCCE16CABD06001850D9 /* retina_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retina_retina.png; sourceTree = "<group>"; };
 		8260B4CF176F6B4C0065A43B /* ImageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcessor.h; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A0439018D42429006BDA7E /* ImageIO.framework in Frameworks */,
 				109D6961189059AA008374CD /* opencv2.framework in Frameworks */,
 				8284DA5C1767B89900FB6874 /* CoreBluetooth.framework in Frameworks */,
 				8261B0B316CB424100E329F7 /* MediaPlayer.framework in Frameworks */,
@@ -200,6 +203,7 @@
 		82E85D4E167ABB340094F69E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				10A0438F18D42429006BDA7E /* ImageIO.framework */,
 				109D6960189059AA008374CD /* opencv2.framework */,
 				82E85D4F167ABB340094F69E /* UIKit.framework */,
 				82E85D51167ABB340094F69E /* Foundation.framework */,

@@ -550,27 +550,30 @@ int captureInterval = 30;
     
     [stillOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler: ^(CMSampleBufferRef imageSampleBuffer, NSError *error)
      {
-         //CFDictionaryRef exifAttachments = CMGetAttachment(imageSampleBuffer, kCGImagePropertyExifDictionary, NULL);
+         CFDictionaryRef metadataDict = CMCopyDictionaryOfAttachments(NULL, imageSampleBuffer, kCMAttachmentMode_ShouldPropagate);
+         NSMutableDictionary *metadata = [[NSMutableDictionary alloc] initWithDictionary:(__bridge NSDictionary*)metadataDict];
+         CFRelease(metadataDict);
          NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
          UIImage *image = [[UIImage alloc] initWithData:imageData];
-         //NSDictionary *metadata = (__bridge NSDictionary *)exifAttachments;
-         //NSLog(@"%@",metadata);
+ 
          //see snapTimer for commented out possibly useful stuff
          [processor addImage:image];
          // Request to save the image to camera roll
          ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
          
-         [library writeImageToSavedPhotosAlbum:image.CGImage orientation:(ALAssetOrientation)[image imageOrientation] completionBlock:^(NSURL *assetURL, NSError *error){
+         [library writeImageToSavedPhotosAlbum:image.CGImage metadata:metadata completionBlock:^(NSURL *assetURL, NSError *error){
               NSLog(@"In the 'error' area");
-             
+              
              if (error) {
                  NSLog(@"Error writing image to photo album");
              }
              else {
              }
          }];
+         
          // Set the picture properties
      }];
+    
 }
 
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
