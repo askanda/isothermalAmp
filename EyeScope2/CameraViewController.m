@@ -38,7 +38,7 @@ int lastDir=0;
 int currentFrame = 0;
 int secondsTillCapture = 0;
 int captureInterval = 30;
-
+BOOL inTimeLapse = false;
 @interface CameraViewController  ()
 
 @end
@@ -691,11 +691,30 @@ int captureInterval = 30;
     //}
 }
 - (IBAction)startTimelapse:(id)sender {
-    secondsTillCapture = captureInterval;
-    currentFrame = 1;
-    [_frameStatus setText:[NSString stringWithFormat:@"Frame: %d/%d",currentFrame,numberOfFrames]];
-    [_timerStatus setText:[NSString stringWithFormat:@"Seconds until frame: %d",secondsTillCapture]];
-    timelapseTimer = [ NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+    
+    if(inTimeLapse)
+    {
+        [timelapseTimer invalidate];
+        [_frameStatus setText:[NSString stringWithFormat:@"Frame: 0/0"]];
+        [_timerStatus setText:[NSString stringWithFormat:@"Seconds until frame: N/A"]];
+        [startTimelapse setTitle:@"Start Timelapse" forState:UIControlStateNormal];
+        inTimeLapse = false;
+        
+    }
+    else
+    {
+        
+        secondsTillCapture = captureInterval;
+        currentFrame = 1;
+        [_frameStatus setText:[NSString stringWithFormat:@"Frame: %d/%d",currentFrame,numberOfFrames]];
+        [_timerStatus setText:[NSString stringWithFormat:@"Seconds until frame: %d",secondsTillCapture]];
+        timelapseTimer = [ NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(updateTime) userInfo:nil repeats:YES];
+        [startTimelapse setTitle:@"Stop Timelapse" forState:UIControlStateNormal];
+        inTimeLapse = true;
+        
+    }
+    
+    
     
    
 }
@@ -721,6 +740,7 @@ int captureInterval = 30;
             [timelapseTimer invalidate];
             [_frameStatus setText:[NSString stringWithFormat:@"Frame: 0/0"]];
             [_timerStatus setText:[NSString stringWithFormat:@"Seconds until frame: N/A"]];
+            [startTimelapse setTitle:@"Start Timelapse" forState:UIControlStateNormal];
         }
     }
 }
